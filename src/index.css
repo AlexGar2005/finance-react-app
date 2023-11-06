@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #000300;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeFromUp {
+  animation-name: fade-from-up;
+  animation-duration: 2s;
+  position: relative;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-from-up {
+  from {
+    top: -200px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.fadeFromRight {
+  animation-name: fade-from-right;
+  animation-duration: 2s;
+  position: relative;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.fadeFromLeft {
+  animation-name: fade-from-left;
+  animation-duration: 2s;
+  position: relative;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.delay1 {
+  animation-delay: 2s;
+}
+.delay2 {
+  animation-delay: 4s;
+}
+.delay3 {
+  animation-delay: 6s;
+}
+.delay4 {
+  animation-delay: 8s;
+}
+.analytics.active img {
+  animation-name: fade-from-left;
+  animation-duration: 2s;
+  position: relative;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.analytics.active .rightSide {
+  animation-name: fade-from-right;
+  animation-duration: 2s;
+  position: relative;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+
+
+
+@keyframes fade-from-right {
+  from {
+    right: -500px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+@keyframes fade-from-left {
+  from {
+    right: 500px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
